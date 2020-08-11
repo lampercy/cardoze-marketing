@@ -1,17 +1,17 @@
 <template>
     <div id="main">
-        <div id="section-1">
+        <div id="home">
             <div id="header">
-                <a href="#">Home</a>
-                <a href="#section-2">Features</a>
-                <a href="#section-3">How it work</a>
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it works</a>
                 <a href="mailto:rikinhim@gmail.com">Contact us</a>
             </div>
-            <div id="section-1-content">
+            <div id="home-content">
                 <div id="left">
                     <img id="app-name" src="../assets/cardoze.png" />
                     <p id="subtitle">Never forget vocabulary ever again!</p>
-                    <a id="learn-more" href="#">
+                    <a id="learn-more" href="#how-it-works">
                         <img src="../assets/learn more.png" />
                     </a>
                 </div>
@@ -20,17 +20,17 @@
                 </div>
             </div>
         </div>
-        <div id="section-2">
-            <p id="section-2-title">
+        <div id="features">
+            <p id="features-title">
                 <span>Simple</span>
-                but
+                &
                 <span>Powerful</span>
                 tool for language learners
             </p>
             <div id="icons">
                 <div class="icon">
                     <img src="../assets/F1.png">
-                    <p>Creating flashcard<br>in a second</p>
+                    <p>Create flashcards<br>in a second</p>
                 </div>
                 <div class="icon">
                     <img src="../assets/F2.png">
@@ -42,14 +42,14 @@
                 </div>
                 <div class="icon">
                     <img src="../assets/F4.png">
-                    <p>Fully customize<br>your collections</p>
+                    <p>Freely customize<br>your collections</p>
                 </div>
             </div>
         </div>
-        <div id="section-3">
+        <div id="how-it-works">
                 <iframe id="video" src="https://www.youtube.com/embed/L9GowoGK1tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p id="section-3-title">
-                <span>Cardoze</span><br id="break"> Learn a language in a tap
+            <p id="how-it-works-title">
+                <span>Cardoze</span><br id="break">One tap, One word
             </p>
             <img id="students" src="../assets/Students.png">
         </div>
@@ -73,7 +73,7 @@ $mobile-width: 900px;
     font-family: 'Raleway', sans-serif;
 }
 
-#section-1 {
+#home {
     background-image: url('../assets/BG.png');
     padding: 28px 42px;
     background-size: cover;
@@ -128,7 +128,7 @@ $mobile-width: 900px;
 }
 
 #phone {
-    width: 526px;
+    width: 283px;
     margin-bottom: -86px;
 
     @media (max-width: $mobile-width) {
@@ -139,7 +139,7 @@ $mobile-width: 900px;
     }
 }
 
-#section-1-content {
+#home-content {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -173,12 +173,12 @@ $mobile-width: 900px;
     }
 }
 
-#section-2 {
+#features {
     text-align: center;
     padding: 50px;
 }
 
-#section-2-title {
+#features-title {
     font-size: 24px;
     letter-spacing: 2px;
     line-height: 30px;
@@ -188,7 +188,7 @@ $mobile-width: 900px;
     }
 }
 
-#section-3-title {
+#how-it-works-title {
     font-size: 24px;
     letter-spacing: 2px;
     span {
@@ -224,7 +224,7 @@ $mobile-width: 900px;
     }
 }
 
-#section-3 {
+#how-it-works {
     text-align: center;
     padding: 50px;
 }
