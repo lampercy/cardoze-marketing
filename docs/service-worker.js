@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cardoze-marketing/precache-manifest.6458bd0df47c2436dcd5d218dd359681.js"
+  "http://www.cardozeapp.com/precache-manifest.38c721b57598ba4a67461155c465fc26.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "cardoze-marketing"});
