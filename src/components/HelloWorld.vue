@@ -260,8 +260,9 @@ $mobile-width: 1000px;
         width: 186px;
         max-width: 100%;
         @media (max-width: $mobile-width) {
-            width: 150px;
+            width: 200px;
             margin-top: 10px;
+            margin-left: 10px;
         }
     }
 }

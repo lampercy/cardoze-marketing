@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "508f25a89b5578cea91d",
-    "url": "/cardoze-marketing/dist/css/app.75e99e2b.css"
+    "revision": "5da84ac472d2d6a96474",
+    "url": "/cardoze-marketing/dist/css/app.4f98b940.css"
   },
   {
     "revision": "dde319fe47966c3f6676",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cardoze-marketing/dist/img/F4.0360db88.png"
   },
   {
-    "revision": "a09e8db3bf1d22e9cbf07c5cd4676f89",
-    "url": "/cardoze-marketing/dist/img/Learn more.a09e8db3.png"
+    "revision": "bc0d59f7ce33c9ff364419d7684fd802",
+    "url": "/cardoze-marketing/dist/img/Learn more.bc0d59f7.png"
   },
   {
     "revision": "bb965e2d0931111b9a0d0642a56197f0",
@@ -68,12 +68,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cardoze-marketing/dist/img/cardoze.5df70aa5.png"
   },
   {
-    "revision": "bef1886a8eecdb28b51a1b9d9b28fbae",
+    "revision": "2f215e25195394e8c8a000f01aaff6ee",
     "url": "/cardoze-marketing/dist/index.html"
   },
   {
-    "revision": "508f25a89b5578cea91d",
-    "url": "/cardoze-marketing/dist/js/app.f306c776.js"
+    "revision": "5da84ac472d2d6a96474",
+    "url": "/cardoze-marketing/dist/js/app.316ed614.js"
   },
   {
     "revision": "dde319fe47966c3f6676",
