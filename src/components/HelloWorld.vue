@@ -17,7 +17,27 @@
                 </div>
                 <div id="right">
                     <img id="pencil" src="../assets/Pencil.png" />
-                    <img id="phone" src="../assets/Phone.png" />
+                    <div id="phone-wrapper">
+                        <img id="phone" src="../assets/Phone.png" />
+                        <swiper id="swiper" :options="swiperOptions">
+                            <swiper-slide>
+                                <img class="app-screen" src="../assets/APP1.png">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img class="app-screen" src="../assets/APP2.png">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img class="app-screen" src="../assets/APP3.png">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img class="app-screen" src="../assets/APP4.png">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img class="app-screen" src="../assets/APP5.png">
+                            </swiper-slide>
+                        </swiper>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -54,7 +74,6 @@
                         id="video"
                         src="https://www.youtube.com/embed/L9GowoGK1tk"
                         frameborder="0"
-                        allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture"
                         allowfullscreen
                     />
                 </div>
@@ -72,7 +91,19 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class HelloWorld extends Vue {
-  @Prop() private msg!: string;
+    @Prop() private msg!: string;
+
+    data() {
+        return {
+            swiperOptions: {
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+            },
+        };
+    }
 }
 </script>
 
@@ -151,16 +182,47 @@ $mobile-width: 1000px;
     }
 }
 
-#phone {
-    width: 283px;
+#phone-wrapper {
+    position: relative;
     margin-bottom: -120px;
 
     @media (max-width: $mobile-width) {
         margin-top: 30px;
         width: 366px;
+        margin: 0 auto;
         margin-bottom: 0;
-        margin-left: -7px;
-        max-width: 100%;
+    }
+}
+
+#phone {
+    width: 283px;
+
+    @media (max-width: $mobile-width) {
+        width: 366px;
+    }
+}
+
+#swiper {
+    position: absolute;
+    top: 33px;
+    width: 213px;
+    left: 35px;
+    border-radius: 27px 27px 0 0;
+    height: 385px;
+    @media (max-width: $mobile-width) {
+        top: 42px;
+        width: 276px;
+        left: 45px;
+        border-radius: 34px 34px 0 0;
+        height: 499px;
+    }
+}
+
+.app-screen {
+    width: 214px;
+
+    @media (max-width: $mobile-width) {
+        width: 277px;
     }
 }
 
