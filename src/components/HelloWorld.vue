@@ -240,9 +240,13 @@ $mobile-width: 1000px;
     justify-content: center;
     margin-top: 60px;
 
-    @media (max-width: $mobile-width) {
-        flex-flow: column;
+    @media (max-width: 922px) {
+        width: 426px;
         align-items: center;
+        max-width: 100%;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
