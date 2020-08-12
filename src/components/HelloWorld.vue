@@ -12,10 +12,11 @@
                     <img id="app-name" src="../assets/cardoze.png" />
                     <p id="subtitle">Never forget vocabulary ever again!</p>
                     <a id="learn-more" href="#how-it-works">
-                        <img src="../assets/learn more.png" />
+                        <img src="../assets/Learn more.png" />
                     </a>
                 </div>
                 <div id="right">
+                    <img id="pencil" src="../assets/Pencil.png" />
                     <img id="phone" src="../assets/Phone.png" />
                 </div>
             </div>
@@ -47,7 +48,17 @@
             </div>
         </div>
         <div id="how-it-works">
-                <iframe id="video" src="https://www.youtube.com/embed/L9GowoGK1tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="video-wrapper-outer">
+                <div id="video-wrapper-inner">
+                    <iframe
+                        id="video"
+                        src="https://www.youtube.com/embed/L9GowoGK1tk"
+                        frameborder="0"
+                        allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture"
+                        allowfullscreen
+                    />
+                </div>
+            </div>
             <p id="how-it-works-title">
                 <span>Cardoze</span><br id="break">One tap, One word
             </p>
@@ -66,7 +77,7 @@ export default class HelloWorld extends Vue {
 </script>
 
 <style scoped lang="scss">
-$mobile-width: 900px;
+$mobile-width: 1000px;
 
 #main {
     color: #2d65c2;
@@ -77,6 +88,9 @@ $mobile-width: 900px;
     background-image: url('../assets/BG.png');
     padding: 28px 42px;
     background-size: cover;
+    @media (max-width: $mobile-width) {
+        padding: 28px 18px;
+    }
 }
 
 #header {
@@ -108,14 +122,13 @@ $mobile-width: 900px;
 #app-name {
     width: 412px;
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 50px;
     @media (max-width: $mobile-width) {
         width: 300px;
     }
 }
 
 #subtitle {
-    font-family: 'Lobster', cursive;
     font-size: 24px;
     font-weight: normal;
     letter-spacing: 2.5px;
@@ -127,25 +140,39 @@ $mobile-width: 900px;
     }
 }
 
+#pencil {
+    width: 396px;
+    position: absolute;
+    bottom: -46px;
+    left: -365px;
+
+    @media (max-width: $mobile-width) {
+        display: none;
+    }
+}
+
 #phone {
     width: 283px;
-    margin-bottom: -86px;
+    margin-bottom: -120px;
 
     @media (max-width: $mobile-width) {
         margin-top: 30px;
         width: 366px;
-        margin-bottom: -71px;
+        margin-bottom: 0;
         margin-left: -7px;
+        max-width: 100%;
     }
 }
 
 #home-content {
     display: flex;
     max-width: 1200px;
+    padding-left: 50px;
     margin: 0 auto;
     justify-content: space-between;
     @media (max-width: $mobile-width) {
         flex-flow: column;
+        padding-left: 0;
     }
 }
 
@@ -154,6 +181,10 @@ $mobile-width: 900px;
     @media (max-width: $mobile-width) {
         margin-left: 0;
     }
+}
+
+#right {
+    position: relative;
 }
 
 @media (max-width: $mobile-width) {
@@ -176,12 +207,16 @@ $mobile-width: 900px;
 #features {
     text-align: center;
     padding: 50px;
+    @media (max-width: $mobile-width) {
+        padding: 28px;
+    }
 }
 
 #features-title {
     font-size: 24px;
     letter-spacing: 2px;
     line-height: 30px;
+    margin-top: 45px;
     span {
         text-transform: uppercase;
         font-weight: bold;
@@ -226,13 +261,16 @@ $mobile-width: 900px;
 
 #how-it-works {
     text-align: center;
-    padding: 50px;
+    @media (max-width: $mobile-width) {
+        padding: 28px;
+    }
 }
 
 #students {
     width: 600px;
     max-width: 100%;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 #id {
@@ -243,17 +281,31 @@ $mobile-width: 900px;
 }
 
 #video {
-    margin-bottom: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#video-wrapper-outer {
     max-width: 100%;
     width: 720px;
-    max-width: 100%;
-    height: 480px;
-    @media (max-width: $mobile-width) {
-        height: 300px;
-    }
-    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 70px;
     background-image: url('../assets/BG.png');
     background-size: cover;
+    padding: 5px;
+}
+
+#video-wrapper-inner {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+    @media (max-width: $mobile-width) {
+        padding-bottom: 60%;
+    }
 }
 
 </style>
