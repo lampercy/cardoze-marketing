@@ -140,6 +140,7 @@ export default class HelloWorld extends Vue {
 
 <style scoped lang="scss">
 $mobile-width: 1000px;
+$xs-mobile-width: 420px;
 
 #main {
     color: #2d65c2;
@@ -217,7 +218,7 @@ $mobile-width: 1000px;
 
 #phone-wrapper {
     position: relative;
-    margin-bottom: -120px;
+    margin-bottom: -147px;
 
     @media (max-width: $mobile-width) {
         margin-top: 30px;
@@ -225,37 +226,39 @@ $mobile-width: 1000px;
         margin: 0 auto;
         margin-bottom: 0;
     }
+
+    @media (max-width: $xs-mobile-width) {
+        width: 283px;
+    }
 }
 
 #phone {
-    width: 283px;
-
-    @media (max-width: $mobile-width) {
-        width: 366px;
+    width: 366px;
+    @media (max-width: $xs-mobile-width) {
+        width: 283px;
     }
 }
 
 #swiper {
     position: absolute;
-    top: 33px;
-    width: 213px;
-    left: 35px;
-    border-radius: 27px 27px 0 0;
-    height: 385px;
-    @media (max-width: $mobile-width) {
-        top: 42px;
-        width: 276px;
-        left: 45px;
-        border-radius: 34px 34px 0 0;
-        height: 499px;
+    top: 42px;
+    width: 276px;
+    left: 45px;
+    height: 499px;
+    border-radius: 34px 34px 0 0;
+    @media (max-width: $xs-mobile-width) {
+        top: 33px;
+        width: 213px;
+        left: 35px;
+        border-radius: 27px 27px 0 0;
+        height: 385px;
     }
 }
 
 .app-screen {
-    width: 214px;
-
-    @media (max-width: $mobile-width) {
-        width: 277px;
+    width: 277px;
+    @media (max-width: $xs-mobile-width) {
+        width: 214px;
     }
 }
 
