@@ -24,16 +24,25 @@
                                 <img class="app-screen" src="../assets/APP1.png">
                             </swiper-slide>
                             <swiper-slide>
-                                <img class="app-screen" src="../assets/APP2.png">
+                                <img class="app-screen" src="../assets/Screencap2.png">
                             </swiper-slide>
                             <swiper-slide>
-                                <img class="app-screen" src="../assets/APP3.png">
+                                <img class="app-screen" src="../assets/Screencap4.png">
                             </swiper-slide>
                             <swiper-slide>
-                                <img class="app-screen" src="../assets/APP4.png">
+                                <img class="app-screen" src="../assets/Screencap3.png">
                             </swiper-slide>
                             <swiper-slide>
-                                <img class="app-screen" src="../assets/APP5.png">
+                                <img class="app-screen" src="../assets/Screencap5.png">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img class="app-screen" src="../assets/Screencap1.png">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img class="app-screen" src="../assets/Screencap6.png">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img class="app-screen" src="../assets/Screencap7.png">
                             </swiper-slide>
                         </swiper>
                     </div>
@@ -245,12 +254,12 @@ $xs-mobile-width: 420px;
     width: 276px;
     left: 45px;
     height: 499px;
-    border-radius: 34px 34px 0 0;
+    border-radius: 31px 31px 0 0;
     @media (max-width: $xs-mobile-width) {
         top: 33px;
         width: 213px;
         left: 35px;
-        border-radius: 27px 27px 0 0;
+        border-radius: 23px 23px 0 0;
         height: 385px;
     }
 }
@@ -391,7 +400,7 @@ $xs-mobile-width: 420px;
 
 #video-wrapper-outer {
     max-width: 100%;
-    width: 720px;
+    width: 900px;
     margin: 0 auto;
     margin-bottom: 70px;
     background-image: url('../assets/BG.png');

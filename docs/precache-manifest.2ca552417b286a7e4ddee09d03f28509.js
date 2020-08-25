@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "edb47ea5096003598ae4",
-    "url": "https://cardozeapp.com/css/app.2a43bc01.css"
+    "revision": "e1157891a5dca8bacd37",
+    "url": "https://cardozeapp.com/css/app.751673d1.css"
   },
   {
     "revision": "dde319fe47966c3f6676",
@@ -10,22 +10,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ce3d1c6a893aa33cbd4b8028eb341edc",
     "url": "https://cardozeapp.com/img/APP1.ce3d1c6a.png"
-  },
-  {
-    "revision": "c554a26fe1150601576df62d1d545550",
-    "url": "https://cardozeapp.com/img/APP2.c554a26f.png"
-  },
-  {
-    "revision": "0fd1fe35cafd879dd82a4d7560c973f3",
-    "url": "https://cardozeapp.com/img/APP3.0fd1fe35.png"
-  },
-  {
-    "revision": "e6e6676d009ff31d19937d847b67292d",
-    "url": "https://cardozeapp.com/img/APP4.e6e6676d.png"
-  },
-  {
-    "revision": "9c1df12b443ab6cc228217f2c034d8c4",
-    "url": "https://cardozeapp.com/img/APP5.9c1df12b.png"
   },
   {
     "revision": "eac4bb67ede4edef7cc2ee6410d18fb3",
@@ -60,6 +44,34 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://cardozeapp.com/img/Phone.0cd75fc7.png"
   },
   {
+    "revision": "04dae1f1128ba8d264c201db35466806",
+    "url": "https://cardozeapp.com/img/Screencap1.04dae1f1.png"
+  },
+  {
+    "revision": "552c7ed398ed8295978af20918898590",
+    "url": "https://cardozeapp.com/img/Screencap2.552c7ed3.png"
+  },
+  {
+    "revision": "e4bb5592617b725500ad6a6f390b6f54",
+    "url": "https://cardozeapp.com/img/Screencap3.e4bb5592.png"
+  },
+  {
+    "revision": "cd67b11a9208fdb39356c79feb7a6fc6",
+    "url": "https://cardozeapp.com/img/Screencap4.cd67b11a.png"
+  },
+  {
+    "revision": "b04de661f6e46a4f171ccdf4d66f3a0d",
+    "url": "https://cardozeapp.com/img/Screencap5.b04de661.png"
+  },
+  {
+    "revision": "cf5472df8c75f29014b846c9ab949124",
+    "url": "https://cardozeapp.com/img/Screencap6.cf5472df.png"
+  },
+  {
+    "revision": "6d3fe3eb8db3676fe15915502c2227e9",
+    "url": "https://cardozeapp.com/img/Screencap7.6d3fe3eb.png"
+  },
+  {
     "revision": "b2954d027d1547784ca9af4efe7df782",
     "url": "https://cardozeapp.com/img/Send icon.b2954d02.png"
   },
@@ -72,12 +84,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://cardozeapp.com/img/cardoze.5df70aa5.png"
   },
   {
-    "revision": "23d533c207c267b38a536bf4c951651b",
+    "revision": "97b592dbbc4a82c630c6030bea592aef",
     "url": "https://cardozeapp.com/index.html"
   },
   {
-    "revision": "edb47ea5096003598ae4",
-    "url": "https://cardozeapp.com/js/app.a3f0abb1.js"
+    "revision": "e1157891a5dca8bacd37",
+    "url": "https://cardozeapp.com/js/app.274db8b5.js"
   },
   {
     "revision": "dde319fe47966c3f6676",
