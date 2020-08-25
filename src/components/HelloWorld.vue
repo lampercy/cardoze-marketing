@@ -5,12 +5,12 @@
                 <a href="#home">Home</a>
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How it works</a>
-                <a href="mailto:rikinhim@gmail.com">Contact us</a>
+                <a href="#contact-us">Contact us</a>
             </div>
             <div id="home-content">
                 <div id="left">
                     <img id="app-name" src="../assets/cardoze.png" />
-                    <p id="subtitle">Never forget vocabulary ever again!</p>
+                    <p id="subtitle">Your daily dose of language!</p>
                     <a id="learn-more" href="#how-it-works">
                         <img src="../assets/Learn more.png" />
                     </a>
@@ -72,16 +72,46 @@
                 <div id="video-wrapper-inner">
                     <iframe
                         id="video"
-                        src="https://www.youtube.com/embed/L9GowoGK1tk"
+                        src="https://www.youtube.com/embed/LEYzg4D9Or0"
                         frameborder="0"
                         allowfullscreen
                     />
                 </div>
             </div>
             <p id="how-it-works-title">
-                <span>Cardoze</span><br id="break">One tap, One word
+                <span>Cardoze</span><br id="break">Language at your fingertips!
             </p>
             <img id="students" src="../assets/Students.png">
+        </div>
+        <div id="contact-us">
+            <div id="contact-us-title">Contact us</div>
+            <form action="https://send.pageclip.co/HYTPpvJXlROc2QlGv84A1SehHZlnPZb6" id="contact-us-form" method="post">
+                <div class="email-row">
+                    <div class="email-field-title">First Name</div>
+                    <input class="email-field-input" type="text" name="name" required />
+                </div>
+                <div class="email-row">
+                    <div class="email-field-title">Email</div>
+                    <input class="email-field-input" type="email" name="email" required />
+                </div>
+                <div class="email-row">
+                    <div class="email-field-title">Message</div>
+                    <textarea
+                        class="email-field-input textarea"
+                        type="email"
+                        name="message"
+                        required
+                    />
+                </div>
+                <div id="submit-wrapper">
+                    <button type="submit" id="submit">
+                        <img src="../assets/Send icon.png" />
+                    </button>
+                </div>
+            </form>
+            <div id="footer">
+                @ {{ year }} CARDOZE. All rights reserved.
+            </div>
         </div>
     </div>
 </template>
@@ -102,6 +132,7 @@ export default class HelloWorld extends Vue {
                     disableOnInteraction: false,
                 },
             },
+            year: (new Date()).getFullYear(),
         };
     }
 }
@@ -113,6 +144,7 @@ $mobile-width: 1000px;
 #main {
     color: #2d65c2;
     font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
 }
 
 #home {
@@ -127,10 +159,12 @@ $mobile-width: 1000px;
 #header {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 
     @media (max-width: $mobile-width) {
         justify-content: center;
+        flex-wrap: wrap;
+        line-height: 24px;
     }
 
     a {
@@ -138,7 +172,6 @@ $mobile-width: 1000px;
         color: #333;
         text-transform: uppercase;
         text-decoration: none;
-        letter-spacing: 2px;
         font-size: 16px;
         white-space: nowrap;
 
@@ -277,7 +310,6 @@ $mobile-width: 1000px;
 
 #features-title {
     font-size: 24px;
-    letter-spacing: 2px;
     line-height: 30px;
     margin-top: 45px;
     span {
@@ -288,7 +320,6 @@ $mobile-width: 1000px;
 
 #how-it-works-title {
     font-size: 24px;
-    letter-spacing: 2px;
     span {
         letter-spacing: 4px;
         font-size: 30px;
@@ -304,7 +335,7 @@ $mobile-width: 1000px;
     margin-top: 60px;
 
     @media (max-width: 922px) {
-        width: 426px;
+        width: 440px;
         align-items: center;
         max-width: 100%;
         flex-wrap: wrap;
@@ -314,9 +345,9 @@ $mobile-width: 1000px;
 }
 
 .icon {
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 165px;
+    width: 215px;
+    line-height: 20px;
+
     img {
         width: 111px;
     }
@@ -369,9 +400,76 @@ $mobile-width: 1000px;
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
-
     @media (max-width: $mobile-width) {
         padding-bottom: 60%;
+    }
+}
+
+#contact-us {
+    text-align: center;
+    background-color: #2d65c2;
+    padding: 50px 28px 16px;
+}
+
+#contact-us-title {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#contact-us-form {
+    width: 450px;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.email-field-title {
+    color: white;
+    text-align: left;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.email-field-input {
+    width: 100%;
+    padding: 4px 8px;
+    &.textarea {
+        height: 150px;
+    }
+}
+
+.email-row {
+    margin-bottom: 18px;
+}
+
+#submit-wrapper {
+    text-align: right;
+    @media (max-width: $mobile-width) {
+        text-align: center;
+    }
+}
+
+#submit {
+    text-align: right;
+    background: none;
+    border: none;
+    img {
+        width: 140px;
+        margin-right: -15px;
+    }
+}
+
+#footer {
+    text-align: left;
+    color: white;
+    font-size: 11px;
+
+    @media (max-width: $mobile-width) {
+        text-align: center;
     }
 }
 
