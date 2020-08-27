@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e1157891a5dca8bacd37",
-    "url": "https://cardozeapp.com/css/app.751673d1.css"
+    "revision": "cfa41798f6008cdd47c5",
+    "url": "https://cardozeapp.com/css/app.b9db8721.css"
   },
   {
     "revision": "dde319fe47966c3f6676",
@@ -84,12 +84,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://cardozeapp.com/img/cardoze.5df70aa5.png"
   },
   {
-    "revision": "97b592dbbc4a82c630c6030bea592aef",
+    "revision": "7f27964a3ccc622682324fe0005ad4c8",
     "url": "https://cardozeapp.com/index.html"
   },
   {
-    "revision": "e1157891a5dca8bacd37",
-    "url": "https://cardozeapp.com/js/app.274db8b5.js"
+    "revision": "cfa41798f6008cdd47c5",
+    "url": "https://cardozeapp.com/js/app.e3477a9e.js"
   },
   {
     "revision": "dde319fe47966c3f6676",
